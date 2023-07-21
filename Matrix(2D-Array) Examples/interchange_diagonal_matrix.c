@@ -5,33 +5,35 @@ int main(){
     printf("C Prog to Interchange Diagonals of the Matrix\n");
     printf("-------------------------------------\n ");
 
-    #define size 3
     int i,j;
-    int sum;
-    int A[size][size];
+    int temp;
+    int size;
 
-    printf("\nEnter the Elements of Matrix:-\n");
+    printf("Enter the Size of Matrix:- ");
+    scanf("%d",&size);
+    int A[size][size];
+    
+
+    printf("\nEnter the Elements of %d x %d Matrix:-\n",size,size);
     for(i=0;i<size;i++){
         for(j=0;j<size;j++){
             scanf("%d",&A[i][j]);
         }
     }
 
-   
-    for(i=0;i<size;i++){
-        sum=0;
+    printf("\nThe Interchanged Diagonal Elements of Matrix:-\n");
         for(j=0;j<size;j++){
-            sum = sum + A[i][j];
+            temp=A[j][j];
+            A[j][j]=A[j][size-j-1];
+            A[j][size-j-1]=temp;
         }
-         printf("The sum of elements of Row %d= %d\n",i+1,sum);
-    }
+   
 
      for(i=0;i<size;i++){
-        sum=0;
         for(j=0;j<size;j++){
-            sum = sum + A[j][i];
+            printf("%4d ",A[i][j]);
         }
-         printf("The sum of elements of Column %d= %d\n",i+1,sum);
+        printf("\n");
     }
     return 0;
 }
