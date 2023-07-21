@@ -3,7 +3,7 @@
 
 int main()
 {
-    printf("C Prog to Calculate nummber of Digits  \n");
+    printf("C Prog to Calculate number of Digits  \n");
     printf("-------------------------------------\n ");
 
     long long num;
