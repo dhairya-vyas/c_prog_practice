@@ -12,10 +12,10 @@ int main(){
     scanf("%d",&num);
 
     if(palindrome(num) == 0){
-        printf("the number %d is a Palindrome number",num);
+        printf("The number %d is a Palindrome number",num);
     }
     else{
-        printf("the number %d is not a Palindrome number",num);
+        printf("The number %d is not a Palindrome number",num);
     }
  return 0;   
 }

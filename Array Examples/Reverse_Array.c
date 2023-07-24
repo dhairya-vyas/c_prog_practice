@@ -1,25 +1,30 @@
 #include<stdio.h>
 
-#define MAX_SIZE 100
+#define size 100
 
 int main()
 {
-    int source_arr[MAX_SIZE],dest_arr[MAX_SIZE];
-    int size,i;
 
-    int *source_ptr = source_arr;
-    int *dest_ptr = dest_arr;
-
-    int *end_ptr;
+int i,n;
+int arr[size];
 
     printf("Enter the number of Elements:- ");
-    scanf("%d",size);
+    scanf("%d",&n);
 
     printf("Enter the Array Elements:- ");
-     for(i=0;i<=size;i++)
+     for(i=0;i<n;i++)
     {
-        scanf("%d",source_arr[i]);
+        scanf("%d",&arr[i]);
     }
 
+    printf("\nThe elements of Array before reversing are:- ");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+
+    printf("\nThe elements of Array after reversing are:- ");
+    for(i=n-1;i>=0;i--){
+        printf("%d ",arr[i]);
+    }
     
 }

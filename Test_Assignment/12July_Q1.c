@@ -35,6 +35,7 @@ int main(){
         }
     }
 
+
     //For Printing in ascending order
     printf("\n The Elements in Ascending order are:- ");
     for(i=0;i<n;i++)
