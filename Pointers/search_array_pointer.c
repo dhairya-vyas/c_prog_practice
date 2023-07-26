@@ -35,7 +35,7 @@ int main(){
     if(count > 0){
         printf("\nThe number %d found at %d places in the given aray:\n",num,count);
         for(i=0;i<count;i++){
-            printf("Index %d\n",result[i]-arr);
+            printf("Index-- %d\n\n",result[i]-arr);
         }
     } else {
         printf("\nElement not fount in the array.\n");

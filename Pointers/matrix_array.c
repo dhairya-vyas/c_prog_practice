@@ -22,11 +22,11 @@ int main(){
 }
 
 
-void inputArray(int [][COL],int row, int col){
+void inputArray(int matrix[][COL],int row, int col){
     int i,j;
     for(i=0;i<row;i++){
         for(j =0;j<col;j++){
-            scanf("%d",(*(matrix + i) + j));
+            scanf("%d",&matrix[i][j]);
         }
     }
 }
@@ -35,7 +35,7 @@ void printArray(int (*matrix)[COL],int row, int col){
     int i,j;
     for(i=0;i<row;i++){
         for(j=0;j<col;j++){
-            printf("%d ",*(*(matrix + i) + j));
+            printf("%d ",matrix[i][j]);
         }
         printf("\n");
     }

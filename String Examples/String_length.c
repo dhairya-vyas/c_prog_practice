@@ -7,14 +7,15 @@ int main(){
 #define size 100
     char text[size];
     int i;
-    int count=0;
+    int count=0,len;
 
     printf("\n Enter the String:- ");
         fgets(text,100,stdin);
 
-    for(i=0;text[i]!='\0';i++){
+    for(i=0;text[i]!='\n';i++){
     }
-    printf("\nThe length of the %s string is:- %d\n",text,i);
+    text[i]='\0';
+    printf("\nThe length of \"%s\" is:- %d\n",text,i);
 
     return 0;
 }

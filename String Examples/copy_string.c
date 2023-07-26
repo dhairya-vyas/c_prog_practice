@@ -7,7 +7,6 @@ int main(){
 #define size 100
     char text[size],text2[size];
     int i;
-    int count=0;
 
     printf("\n Enter the String:- ");
         fgets(text,100,stdin);
